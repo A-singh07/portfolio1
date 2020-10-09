@@ -158,10 +158,10 @@ body{
     }
     .avatar{
         z-index: 6;
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         top: 15px;
-        right: -30px;
+        right: -20px;
     }
     .landing-container .landing-text{
         width: 100%;
