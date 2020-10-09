@@ -1,0 +1,225 @@
+:root{
+    /* Colors */
+    --silv-color: #EBF4FA;
+    --dark-blue:  #2f85cc;
+    --crem-color: #fff8d6;
+    --light-crem: #F1EFE2;
+    --dark-crem: #E7E4D3;
+
+    /* -- GREEN Shade-1--- */
+    --deep-jungle-green: #004743;
+    --forest-green-crayola: #4fa571;
+    --light-green: #b9e3b3;
+    --V-light-green: #eaf8e7;
+    --metallic-sunburst: #957b4a;
+
+    /* -- GREEN Shade-2 */
+    --green-light-olive: #c6eee3;
+    --green-olive: #568881;
+    --green-V-light-olive: #E9FDF7;
+
+    /* FONTS */
+    --font-style: 'Sansita Swashed', cursive;
+    --font-basic: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    opacity: 0;
+    width: 0px;
+}
+.landing-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.landing-text{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--light-green);
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    z-index: 5;
+    font-family: var(--font-style);
+}
+.landing-text h1{
+    font-size: 4em;
+    width: 200px;
+    height: 70px;
+    margin: 250px auto 20px auto;
+    /* background-color: var(--silv-color); */
+}
+.landing-text h4{
+    font-size: 2em;
+    font-weight: normal;
+    width: 250px;
+    height: 70px;
+    margin: 50px auto 0 auto;
+    /* background-color: var(--silv-color); */
+}
+.avatar{
+    position: absolute;
+    right: calc(40% - 102px);
+    bottom: 10px;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+}
+.about{
+    position: absolute;
+    width: 42%;
+    padding: 20px;
+    margin: 180px 50px;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: var(--font-basic);
+    /* background-color: burlywood; */
+}
+.landing-container a{
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    width: 80px;
+    height: 50px;
+    background-color: var(--deep-jungle-green);
+    text-align: center;
+}
+.landing-container a i{
+    font-size: 3em;
+    color: white;
+}
+.landing-container a:hover{
+    background-color:   #004743c0; /* -deep-jungle-green with some alpha */
+}
+
+/* ------ PROJECTS ------ */
+#projects{
+    width: 100vw;
+    /* height: 100vh; */
+    background-color: var(--V-light-green);
+    text-align: center;
+    padding: 40px;
+}
+#projects h2{
+    font-family: var(--font-style);
+    margin: 20px auto 40px auto;
+}
+#projects .carousel{
+    width: 80%;
+    /* height: 75%; */
+    margin: 0px auto 0 auto;
+}
+.carousel-caption{
+    top: 75%;
+}
+.text-bg{
+    background-color: rgba(0, 0, 0, 0.856);
+    padding: 20px 35px;
+    font-family: var(--font-basic);
+}
+@media screen and (max-width:760px) {
+
+    .landing-container{
+        height: 65vh;
+        overflow: hidden;
+        text-align: center;
+    }
+    .avatar{
+        z-index: 6;
+        width: 100px;
+        height: 100px;
+        top: 5px;
+        right: -20px;
+    }
+    .landing-container .landing-text{
+        width: 100%;
+        height: 30%;
+    }
+    .landing-text h1{
+        font-size: 1.8em;
+        width: 150px;
+        height: 40px;
+        margin: 10px;
+    }
+    .landing-text h4{
+        font-size: 1.4em;
+        margin: 10px 0 0 60px;
+        width: 150px;
+        height: 30px;
+    }
+    .about{
+        width: 100vw;
+        margin: 140px auto;
+        font-size: 0.8em;
+    }
+    .landing-container a{
+        bottom: 10%;
+        width: 40px;
+        height: 30px;
+        left: 45%;
+    }
+    .landing-container a i{
+        font-size: 1.8em;
+    }
+
+    #projects{
+        padding: 10px;
+    }
+    #projects h2{
+        font-size: 1.4em;
+    }
+    #projects .carousel{
+        width: 90%;
+        height: 90%;
+    }
+    #projects .carousel-indicators{
+        display: none;
+    }
+    #projects .text-bg{
+        padding: 20px 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1300px){
+
+    .landing-text h1{
+        margin: 150px auto 10px 30px;
+        font-size: 3em;
+    }
+    .landing-text h4{
+        font-size: 1.8em;
+        margin: 30px auto 0 50px;
+    }
+    .avatar{
+        width: 300px;
+        height: 300px;
+        right: calc(40% - 75px);
+    }
+    .about{
+        font-size: 1em;
+        margin: 10% 20px;
+    }
+    .landing-container a{
+        left: 15%;
+        bottom: 25%;
+        width: 60px;
+        height: 40px;
+    }
+    .landing-container a i{
+        font-size: 2.5em;
+    }
+} 
