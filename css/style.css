@@ -114,6 +114,7 @@ body{
     background-color: var(--V-light-green);
     text-align: center;
     padding: 40px;
+    margin-bottom: 20px;
 }
 #projects h2{
     font-family: var(--font-style);
@@ -135,7 +136,7 @@ body{
 @media screen and (max-width:760px) {
 
     .landing-container{
-        height: 65vh;
+        height: 45vh;
         overflow: hidden;
         text-align: center;
     }
@@ -143,7 +144,7 @@ body{
         z-index: 6;
         width: 100px;
         height: 100px;
-        top: 5px;
+        top: 20px;
         right: -20px;
     }
     .landing-container .landing-text{
@@ -164,7 +165,7 @@ body{
     }
     .about{
         width: 100vw;
-        margin: 140px auto;
+        margin: 130px auto;
         font-size: 0.8em;
     }
     .landing-container a{
@@ -192,6 +193,9 @@ body{
     }
     #projects .text-bg{
         padding: 20px 30px;
+    }
+    #projects .text-bg p{
+        display: none;
     }
 }
 @media screen and (min-width:768px) and (max-width:1300px){
@@ -221,5 +225,15 @@ body{
     }
     .landing-container a i{
         font-size: 2.5em;
+    }
+    #projects .carousel-indicators{
+        display: none;
+    }
+    #projects .text-bg h3{
+        display: none;
+    }
+    #projects .carousel-caption{
+        width: 100%;
+        background-color: cadetblue;
     }
 } 
