@@ -134,7 +134,6 @@ body{
     font-family: var(--font-basic);
 }
 .custom-controls{
-    background-color: turquoise;
     position: absolute;
     height: 15%;
     width: 8%;
@@ -159,10 +158,10 @@ body{
     }
     .avatar{
         z-index: 6;
-        width: 100px;
-        height: 100px;
-        top: 20px;
-        right: -20px;
+        width: 150px;
+        height: 150px;
+        top: 15px;
+        right: -30px;
     }
     .landing-container .landing-text{
         width: 100%;
@@ -209,9 +208,6 @@ body{
         background-color: rgba(0, 0, 0, 0.822);
         width: 30%;
         margin: 0 auto 0 auto;
-    }
-    #projects .carousel{
-        background-color: chartreuse;
     }
     #projects .carousel-caption{
         display: none;
