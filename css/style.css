@@ -12,9 +12,9 @@
     --light-green: #b9e3b3;
     --V-light-green: #eaf8e7;
     --metallic-sunburst: #957b4a;
+    --green-light-olive: #c6eee3;
 
     /* -- GREEN Shade-2 */
-    --green-light-olive: #c6eee3;
     --green-olive: #568881;
     --green-V-light-olive: #E9FDF7;
 
@@ -138,7 +138,7 @@ body{
     height: 15%;
     width: 8%;
     margin: auto 0 auto 0;
-    background-color: var(--dark-crem);
+    background-color: var(--green-light-olive);
     padding: 10px;
 }
 .custom-controls i{
@@ -147,6 +147,9 @@ body{
 }
 .carousel-control-prev-icon{
     display: none;
+}
+.foot-color{
+    background-color: var(--forest-green-crayola);
 }
 
 @media screen and (max-width:760px) {
@@ -193,7 +196,6 @@ body{
     .landing-container a i{
         font-size: 1.8em;
     }
-
     #projects{
         padding: 10px;
     }
@@ -214,6 +216,12 @@ body{
     }
     .custom-controls i{
         font-size: 1em;
+    }
+    footer{
+        height: 10%;
+    }
+    footer a{
+        font-size: 10px;
     }
 }
 @media screen and (min-width:768px) and (max-width:1300px){
@@ -255,4 +263,4 @@ body{
     #projects .carousel-caption{
        display: none;
     }
-} 
+}
